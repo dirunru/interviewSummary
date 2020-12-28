@@ -24,3 +24,5 @@ setTimeOut(()=>{
 
 ### console.table()可以查看一个列表的多个属性中，单独的几个属性
     console.table(user, ['id','name','time'])
+    
+### console.time（） 和console.timeEnd()计算方法运行的时间
