@@ -5,8 +5,13 @@
     alert会阻塞UI和javascript的执行，必须点击'OK'按钮才能继续，非常低效。
 ### console.log() 
 存在打印出来是空数组点击展开之后有值的情况
+解决方法：
 ```
 this.$nextTick(()=>{
+    console.log(arr, '打印空值，展开有值')
+})
+or
+setTimeOut(()=>{
     console.log(arr, '打印空值，展开有值')
 })
 ```
