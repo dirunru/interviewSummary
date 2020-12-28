@@ -20,3 +20,7 @@ setTimeOut(()=>{
     常规的 console.log打印出来的只是HTML标签
     如果我们想看到DOM对象作为JavaScript对象的结构可以使用 console.dir
     console.dir(document.getElementByClassName('divName'))
+    console.dir可以打印出任何JavaScript对象的属性列表
+
+### console.table()可以查看一个列表的多个属性中，单独的几个属性
+    console.table(user, ['id','name','time'])
